@@ -2,10 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'event-app',
-  template: `
-    <h2>Youcef Bnm</h2>
-    <img src="/assets/images/basic-shield.png">
-  `,
+  template: '<events-list></events-list>'
 })
 export class EventAppComponent {
   title = 'event app';
