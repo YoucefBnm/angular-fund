@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'event-app',
   template: `
     <nav></nav>
-    <events-list></events-list>
+    <router-outlet></router-outlet>
   `
 })
 export class EventAppComponent {
