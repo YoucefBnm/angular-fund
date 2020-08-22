@@ -24,10 +24,11 @@ import { Component, Input } from '@angular/core'
   styles:[
     `
     .green { color: #cceeaa !important; }
+    .red { color: rgb(255,10,125) !important; }
     .bold { font-weight: bold; }
     .thumbnail { min-height: 210px; }
     .mar-left { margin-left: 10px; }
-     .well div { color: #bbb; }
+    .well div { color: #bbb; }
     `
   ]
 })
@@ -38,6 +39,8 @@ export class EventThumbnailComponent {
   getStartTimeClass() {
     if (this.event && this.event.time === '8:00 am')
       return ['green', 'bold']
+    if (this.event && this.event.time === '10:00 am')
+      return ['red', 'bold']
     return []
   }
 }
