@@ -1,0 +1,17 @@
+<h1>Login</h1>
+<hr>
+<div class="col-md-4">
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" autocomplete="off">
+    <div class="form-group">
+      <label for="userName">User Name:</label>
+      <input (ngModel)='username' name='userName' type="text" id="userName" class="form-control" placeholder="User Name ...">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input (ngModel)='password' name='password' type="password" id="password" class="form-control" placeholder="Password ...">
+    </div>
+
+    <button class="btn btn-primary" type="submit">login</button>
+    <button (click)="cancel()" class="btn btn-default" type="button">Cancel</button>
+  </form>
+</div>
